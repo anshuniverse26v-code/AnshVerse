@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANSHVERSE</title>
+    <link rel="icon" type="image/x-icon" href="image/logo3.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="progress_bar"></div>
+    <!-- Navbar -->
+    <header>
+      <div id="navbar">
+        <!-- Logo -->
+        <img src="image/logo3.png" alt="Logo" id="logo" />
+
+        <!-- Desktop Navigation -->
+        <nav id="links">
+          <div id="mobile_profile">
+            <img src="image/logo.jpg" alt="" />
+            <h3>Ansh Sharma</h3>
+            <p>Frontend Developer</p>
+          </div>
+
+          <ul>
+            <li><a href="#hero_section">Home</a></li>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#skills_section">Skills</a></li>
+            <li><a href="#projects_section">Projects</a></li>
+            <li><a href="#contact_section">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger -->
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section id="hero_section">
+        <h3 id="hero_hd">Ansh Sharma</h3>
+        <p id="hero_para">
+          <span id="typing"></span>
+        </p>
+        <a href="#projects_section"
+          ><button id="hero_btn">View Projects</button></a
+        >
+      </section>
+      <!-- About section -->
+      <section id="about_section" class="fade-in">
+        <h2 id="about_hd" class="section_hd">About</h2>
+        <div id="about_info">
+          <div id="about_img">
+            <img src="image/logo3.png" alt="" />
+          </div>
+          <div id="about_para">
+            <p>
+              Hi, I’m Ansh Sharma, a frontend web development learner with a
+              strong focus on building clean, user-friendly, and responsive
+              websites. I’m actively improving my skills in HTML, CSS, and
+              JavaScript by creating real-world projects and continuously
+              learning modern web practices. My goal is to start freelancing,
+              work with real clients, and use that experience to build my own
+              business as an entrepreneur.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills_section" class="fade-in">
+        <h2 id="skills_hd" class="section_hd">Skills</h2>
+        <div id="skill_outer">
+          <div id="skill_html" class="skill_inner">
+            <img
+              src="https://spng.pngfind.com/pngs/s/683-6834213_transparent-html-logo-png-png-download.png"
+              alt="html"
+              class="skill_img"
+            />
+            <h3 class="skill_hd">HTML</h3>
+          </div>
+          <div id="skill_css" class="skill_inner">
+            <img
+              src="https://logowik.com/content/uploads/images/css-icon5555.logowik.com.webp"
+              alt="css"
+              class="skill_img"
+            />
+            <h3 class="skill_hd">CSS</h3>
+          </div>
+          <div id="skill_js" class="skill_inner">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfl87jHhRyvOaxz91CzGpXBLTMuR3w7EHYRg&s"
+              alt="js"
+              class="skill_img"
+            />
+            <h3 class="skill_hd">JavaScript</h3>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section -->
+      <section id="projects_section" class="fade-in">
+        <h2 class="section_hd">Projects</h2>
+
+        <div id="projects_container">
+          <!-- Project Card -->
+          <div class="project_card">
+            <img src="image/zomato.png" alt="zomato" />
+            <div class="project_info">
+              <h3>Zomato Clone</h3>
+              <p>Experience fast & easy online ordering on the Zomato app</p>
+              <a href="https://anshuniverse26v-code.github.io/Zomato-clone/" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- CARD 2  -->
+          <div class="project_card">
+            <img src="image/royal-spice.png" alt="Royal Spice Restaurant" />
+            <div class="project_info">
+              <h3>Royal Spice Restaurant</h3>
+              <p>Experience Fine Dining Like Never Before</p>
+              <a href="https://anshuniverse26v-code.github.io/Royal-spice/" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="project_card">
+            <img src="image/asinterior.PNG" alt="asinterior" />
+            <div class="project_info">
+              <h3>A.S Interior & Decor</h3>
+              <p>Time to renovate your dream inteior in home</p>
+              <a href="https://asinterior.in/" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="project_card">
+            <img src="image/dilsewedding.png" alt="Dilsewedding" />
+            <div class="project_info">
+              <h3>Dilsewedding</h3>
+              <p>Capturing emotions, memories & stories.</p>
+              <a href="#" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact_section" class="fade-in">
+        <h2 class="section_hd">Let's Build Your Website</h2>
+
+        <div id="contact_container">
+          <form id="contact_form">
+            <!-- Client Name -->
+            <div class="input_group">
+              <label for="client_name">Client Name</label>
+              <input
+                type="text"
+                id="client_name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <!-- Website Type -->
+            <div class="input_group">
+              <label for="website_mode">Website Mode</label>
+              <select id="website_mode" required>
+                <option value="">Choose Website Type</option>
+                <option value="Static">Static Website</option>
+                <option value="Dynamic">Dynamic Website</option>
+              </select>
+            </div>
+
+            <div class="input_group">
+              <label for="website_category">Website Category</label>
+
+              <select id="website_category">
+                <option value="">Select Website Category</option>
+                <option>E-Commerce Website</option>
+                <option>Portfolio Website</option>
+                <option>Business Website</option>
+                <option>Restaurant Website</option>
+                <option>Wedding Website</option>
+                <option>School / College Website</option>
+                <option>Gym / Fitness Website</option>
+                <option>Travel Website</option>
+                <option>Real Estate Website</option>
+                <option>Medical / Hospital Website</option>
+                <option>Blog Website</option>
+                <option>Landing Page</option>
+
+                <!-- Important -->
+                <option value="custom">Custom Website</option>
+              </select>
+            </div>
+
+            <!-- Hidden initially -->
+            <div class="input_group" id="custom_category_box">
+              <label for="custom_type">Custom Website Type</label>
+              <input
+                type="text"
+                id="custom_type"
+                placeholder="Enter custom website type"
+              />
+            </div>
+
+            <!-- Mobile Number -->
+            <div class="input_group">
+              <label for="mobile_no">Mobile Number</label>
+              <input
+                type="tel"
+                id="mobile_no"
+                placeholder="Enter mobile number"
+                required
+              />
+            </div>
+
+            <!-- Extra Details -->
+            <div class="input_group">
+              <label for="project_details">Project Details</label>
+              <textarea
+                id="project_details"
+                rows="5"
+                placeholder="Describe your project requirements..."
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="contact_btn">Send Request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 My Portfolio</p>
+      <a
+        href="https://www.instagram.com/anshsharma_7349/"
+        class="footer_link"
+        target="_blank"
+        ><img
+          src="https://img.magnific.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid&w=740&q=80"
+          alt=""
+          class="social_img"
+          id="social_insta"
+      /></a>
+      <a href="https://wa.me/+917678119385" class="footer_link" target="_blank"
+        ><img
+          src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN"
+          alt=""
+          class="social_img"
+          id="social_fb"
+      /></a>
+      <a href="https://web.telegram.org/" class="footer_link" target="_blank"
+        ><img
+          src="https://cdn.pixabay.com/photo/2021/12/27/10/50/telegram-6896827_1280.png"
+          alt=""
+          class="social_img"
+          id="social_tg"
+      /></a>
+    </footer>
+
+    <script>
+      // 1. Typing Effect
+      const textArray = [
+        "Frontend Developer",
+        "Problem Solver",
+        "Future Entrepreneur",
+      ];
+
+      let index = 0;
+      let charIndex = 0;
+      let currentText = "";
+      let isDeleting = false;
+
+      function typeEffect() {
+        const typingElement = document.getElementById("typing");
+
+        if (index < textArray.length) {
+          if (!isDeleting && charIndex <= textArray[index].length) {
+            currentText = textArray[index].substring(0, charIndex++);
+          } else if (isDeleting && charIndex >= 0) {
+            currentText = textArray[index].substring(0, charIndex--);
+          }
+
+          typingElement.textContent = currentText;
+
+          if (charIndex === textArray[index].length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1000);
+            return;
+          }
+
+          if (charIndex === 0 && isDeleting) {
+            isDeleting = false;
+            index = (index + 1) % textArray.length;
+          }
+
+          setTimeout(typeEffect, isDeleting ? 50 : 100);
+        }
+      }
+
+      typeEffect();
+
+      // 3. Scroll Progress Bar
+      window.addEventListener("scroll", () => {
+        const scrollTop = document.documentElement.scrollTop;
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+
+        const scrollPercent = (scrollTop / height) * 100;
+        document.getElementById("progress_bar").style.width =
+          scrollPercent + "%";
+      });
+      //4.   FADED EFFECT
+      const faders = document.querySelectorAll(".fade-in");
+
+      const appearOptions = {
+        threshold: 0.2,
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        observer,
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+
+      // Custom category in contact form
+      const category = document.getElementById("website_category");
+      const customBox = document.getElementById("custom_category_box");
+
+      category.addEventListener("change", () => {
+        if (category.value === "custom") {
+          customBox.style.display = "flex";
+        } else {
+          customBox.style.display = "none";
+        }
+      });
+
+      // Mobile Navbar
+
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      // Close menu after clicking link
+
+      document.querySelectorAll("#links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
