@@ -572,12 +572,20 @@ footer p {
 
 .project_info a {
   text-decoration: none;
-  color: #38bdf8;
+  color: white;
   font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color:#38bdf8;
+  font-size: 0.6rem;
+  margin-right: 4px;
+  transition: 0.4s;
 }
 
 .project_info a:hover {
   text-decoration: underline;
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8;
 }
 
 .skill_inner,
