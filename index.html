@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANSHVERSE</title>
     <link rel="icon" type="image/x-icon" href="image/logo3.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -57,7 +61,7 @@
         <h2 id="about_hd" class="section_hd">About</h2>
         <div id="about_info">
           <div id="about_img">
-            <img src="image/logo3.png" alt="about section log" />
+            <img src="image/logo.jpg" alt="about section log" />
           </div>
           <div id="about_para">
             <p>
@@ -113,18 +117,19 @@
             <div class="project_info">
               <h3>Zomato Clone</h3>
               <p>Experience fast & easy online ordering on the Zomato app</p>
-              <a
-                href="https://anshuniverse26v-code.github.io/Zomato-clone/"
-                target="_blank"
-                role="button"
-                >View Live Project</a
-              >
-              <a
-                href="https://github.com/anshuniverse26v-code/Zomato-clone"
-                target="_blank"
-                role="button"
-                >View Source Code</a
-              >
+              <button class="project-btn" id="project-btn1">
+                <a
+                  href="https://asinterior26v-code.netlify.app/"
+                  target="_blank"
+                  role="button"
+                  >View Live Project</a
+                >
+              </button>
+              <button class="project-btn">
+                <a href="Not Available Yet" target="_blank" role="button"
+                  >View Source Code</a
+                >
+              </button>
             </div>
           </div>
 
@@ -134,17 +139,19 @@
             <div class="project_info">
               <h3>Royal Spice Restaurant</h3>
               <p>Experience Fine Dining Like Never Before</p>
-              <a
-                href="https://anshuniverse26v-code.github.io/Royal-spice/"
-                target="_blank"
-                >View Live Project</a
-              >
-              <a
-                href="https://github.com/anshuniverse26v-code/Royal-spice"
-                target="_blank"
-                role="button"
-                >View Source Code</a
-              >
+              <button class="project-btn" id="project-btn1">
+                <a
+                  href="https://asinterior26v-code.netlify.app/"
+                  target="_blank"
+                  role="button"
+                  >View Live Project</a
+                >
+              </button>
+              <button class="project-btn">
+                <a href="Not Available Yet" target="_blank" role="button"
+                  >View Source Code</a
+                >
+              </button>
             </div>
           </div>
           <!-- CARD 3 -->
@@ -153,13 +160,19 @@
             <div class="project_info">
               <h3>A.S Interior & Decor</h3>
               <p>Time to renovate your dream inteior in home</p>
-              <a href="https://asinterior.in/" target="_blank">View Live Project</a>
-              <a
-                href="Not Available Yet"
-                target="_blank"
-                role="button"
-                >View Source Code</a
-              >
+              <button class="project-btn" id="project-btn1">
+                <a
+                  href="https://asinterior26v-code.netlify.app/"
+                  target="_blank"
+                  role="button"
+                  >View Live Project</a
+                >
+              </button>
+              <button class="project-btn">
+                <a href="Not Available Yet" target="_blank" role="button"
+                  >View Source Code</a
+                >
+              </button>
             </div>
           </div>
           <!-- CARD 4 -->
@@ -168,15 +181,19 @@
             <div class="project_info">
               <h3>Dilsewedding</h3>
               <p>Capturing emotions, memories & stories.</p>
-              <a href="https://dilseweddingsss.netlify.app/" target="_blank"
-                >View Live Project</a
-              >
-              <a
-                href="Not Available Yet"
-                target="_blank"
-                role="button"
-                >View Source Code</a
-              >
+              <button class="project-btn" id="project-btn1">
+                <a
+                  href="https://asinterior26v-code.netlify.app/"
+                  target="_blank"
+                  role="button"
+                  >View Live Project</a
+                >
+              </button>
+              <button class="project-btn">
+                <a href="Not Available Yet" target="_blank" role="button"
+                  >View Source Code</a
+                >
+              </button>
             </div>
           </div>
         </div>
@@ -184,15 +201,19 @@
       <!-- Contact Section -->
       <section id="contact_section" class="fade-in">
         <h2 class="section_hd">Let's Build Your Website</h2>
-
         <div id="contact_container">
-          <form id="contact_form">
+          <form
+            id="contact_form"
+            action="https://formspree.io/f/mdavrzeb"
+            method="POST"
+          >
             <!-- Client Name -->
             <div class="input_group">
               <label for="client_name">Client Name</label>
               <input
                 type="text"
                 id="client_name"
+                name="Client Name"
                 placeholder="Enter your name"
                 required
               />
@@ -201,42 +222,48 @@
             <!-- Website Type -->
             <div class="input_group">
               <label for="website_mode">Website Mode</label>
-              <select id="website_mode" required>
+              <select id="website_mode" name="Website Mode" required>
                 <option value="">Choose Website Type</option>
                 <option value="Static">Static Website</option>
                 <option value="Dynamic">Dynamic Website</option>
               </select>
             </div>
 
+            <!-- Website Category -->
             <div class="input_group">
               <label for="website_category">Website Category</label>
 
-              <select id="website_category">
+              <select id="website_category" name="Website Category">
                 <option value="">Select Website Category</option>
-                <option>E-Commerce Website</option>
-                <option>Portfolio Website</option>
-                <option>Business Website</option>
-                <option>Restaurant Website</option>
-                <option>Wedding Website</option>
-                <option>School / College Website</option>
-                <option>Gym / Fitness Website</option>
-                <option>Travel Website</option>
-                <option>Real Estate Website</option>
-                <option>Medical / Hospital Website</option>
-                <option>Blog Website</option>
-                <option>Landing Page</option>
-
-                <!-- Important -->
+                <option value="E-Commerce Website">E-Commerce Website</option>
+                <option value="Portfolio Website">Portfolio Website</option>
+                <option value="Business Website">Business Website</option>
+                <option value="Restaurant Website">Restaurant Website</option>
+                <option value="Wedding Website">Wedding Website</option>
+                <option value="School / College Website">
+                  School / College Website
+                </option>
+                <option value="Gym / Fitness Website">
+                  Gym / Fitness Website
+                </option>
+                <option value="Travel Website">Travel Website</option>
+                <option value="Real Estate Website">Real Estate Website</option>
+                <option value="Medical / Hospital Website">
+                  Medical / Hospital Website
+                </option>
+                <option value="Blog Website">Blog Website</option>
+                <option value="Landing Page">Landing Page</option>
                 <option value="custom">Custom Website</option>
               </select>
             </div>
 
-            <!-- Hidden initially -->
+            <!-- Custom Website Type -->
             <div class="input_group" id="custom_category_box">
               <label for="custom_type">Custom Website Type</label>
               <input
                 type="text"
                 id="custom_type"
+                name="Custom Website Type"
                 placeholder="Enter custom website type"
               />
             </div>
@@ -247,21 +274,22 @@
               <input
                 type="tel"
                 id="mobile_no"
+                name="Mobile Number"
                 placeholder="Enter mobile number"
                 required
               />
             </div>
 
-            <!-- Extra Details -->
+            <!-- Project Details -->
             <div class="input_group">
               <label for="project_details">Project Details</label>
               <textarea
                 id="project_details"
+                name="Project Details"
                 rows="5"
                 placeholder="Describe your project requirements..."
               ></textarea>
             </div>
-
             <!-- Submit Button -->
             <button type="submit" id="contact_btn">Send Request</button>
           </form>
@@ -269,32 +297,78 @@
       </section>
     </main>
 
-    <footer>
-      <p>© 2026 My Portfolio</p>
-      <a
-        href="https://www.instagram.com/anshsharma_7349/"
-        class="footer_link"
-        target="_blank"
-        ><img
-          src="https://img.magnific.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid&w=740&q=80"
-          alt=""
-          class="social_img"
-          id="social_insta"
-      /></a>
-      <a href="https://wa.me/+917678119385" class="footer_link" target="_blank"
-        ><img
-          src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN"
-          alt=""
-          class="social_img"
-          id="social_fb"
-      /></a>
-      <a href="https://web.telegram.org/" class="footer_link" target="_blank"
-        ><img
-          src="https://cdn.pixabay.com/photo/2021/12/27/10/50/telegram-6896827_1280.png"
-          alt=""
-          class="social_img"
-          id="social_tg"
-      /></a>
+    <footer id="footer">
+      <!-- CTA Section -->
+      <div id="footer_cta">
+        <h2>Let's Build Something Amazing Together</h2>
+
+        <p>
+          Looking for a modern, responsive website? Let's discuss your project.
+        </p>
+
+        <a href="#contact_section" id="cta_btn"> Hire Me </a>
+      </div>
+
+      <!-- Main Footer -->
+      <div id="footer_container">
+        <!-- Brand -->
+        <div class="footer_col">
+          <h2 id="footer_logo">AnshVerse</h2>
+
+          <p id="footer_desc">
+            Frontend Developer focused on creating modern, responsive and
+            user-friendly websites.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer_col">
+          <h3 class="footer_title">Quick Links</h3>
+
+          <ul>
+            <li><a href="#hero_section">Home</a></li>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#skills_section">Skills</a></li>
+            <li><a href="#projects_section">Projects</a></li>
+            <li><a href="#contact_section">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer_col">
+          <h3 class="footer_title">Services</h3>
+
+          <ul>
+            <li>Landing Pages</li>
+            <li>Portfolio Websites</li>
+            <li>Business Websites</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer_col">
+          <h3 class="social_hd">Connect</h3>
+
+          <div id="social_icons">
+            <a href="https://www.instagram.com/anshsharma_7349/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/+917678119385?" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://github.com/anshuniverse26v-code" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer_bottom">
+        <p>© 2026 AnshVerse. All Rights Reserved.</p>
+      </div>
     </footer>
 
     <script>
@@ -402,6 +476,15 @@
           navLinks.classList.remove("active");
         });
       });
+
+      // Scroll to top on page reload
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+
+      window.onload = function () {
+        window.scrollTo(0, 0);
+      };
     </script>
   </body>
 </html>
